@@ -1,0 +1,91 @@
+
+
+
+
+
+Assignmen Ans --
+
+Design Pattern - These are solution to general problem that software developer faced during software developement.
+Ex- if some facing problem while pushing cod into production he can follow one of design pattern which are available.
+
+
+
+TDD - when we write test case before writting code and fail them this approach is called Test driven development. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ Write a code to check if given number is armstrong number or not.
+
+class Armstrong {
+public static void main(String[] args){
+int n=153;
+int r,m=0,p;
+
+p=n; 
+while(n>0)
+{
+r=n%10;
+m+=r*r*r;
+n=n/10;
+
+}
+if(m==p)
+{
+System.out.println("its an Armstrong number")
+}
+else
+{
+System.out.println("Not an Armstrong number")
+}
+}
+}
+
+
+
+Write a code to reverse a number.
+
+class Reverse{
+Public static void main{
+int no = 5432 , rem , rev = 0;
+While(no!=0){
+rem=no%10; //remainder will get
+rev=rev*10+rem;
+no = no/10; //cofficient stored inside number again
+}
+System.out.println(rev)
+}
+}
+
+
+
+
+From an array find 3rd highest value.
+class Highest {
+   public static void main(String args[]){
+   int temp, size;
+   int array[] = {10, 20, 25, 63, 96, 57};
+   size = array.length;
+   
+   for(int i = 0; i<size; i++ ){
+      for(int j = i+1; j<size; j++){
+         if(array[i]>array[j]){
+            temp = array[i];
+            array[i] = array[j];
+            array[j] = temp;
+         }
+      }
+   }
+   System.out.println("Third largest number is:: "+array[size-3]);
+   }
+}
